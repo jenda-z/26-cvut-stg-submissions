@@ -9,7 +9,6 @@
 - [How to apply](#how-to-apply)
 - [How proposals are evaluated](#how-proposals-are-evaluated)
 - [Results, negotiations, and project start](#results-negotiations-and-project-start)
-- [Requests for review (procedural)](#requests-for-review-procedural)
 - [Guidance for referees and panel members](#guidance-for-referees-and-panel-members)
 - [Downloads](#downloads)
 - [Contact](#contact)
@@ -160,17 +159,6 @@ The grant agreement between CTU, host unit(s), and PI covers:
 - conditions for any approved bridging extension, and  
 - **employment and career-path arrangements for the PI** (as a condition of award). :contentReference[oaicite:35]{index=35}:contentReference[oaicite:36]{index=36}
 
----
-
-## Requests for review (procedural)
-You may request a review if you believe:
-- the proposal was incorrectly assessed as ineligible/inadmissible/incomplete; or  
-- the evaluation procedure was not correctly applied (e.g., procedural irregularity, COI handling, missing material).  
-
-A request cannot challenge scientific judgement. It must be submitted within **5 calendar days** of receiving the results notification (via the submission system, or as instructed if unavailable). It is examined by a Rectorate-appointed committee not involved in the evaluation. Possible outcomes include confirmation, correction of formal status (and continuation where feasible), or other proportionate procedural remedies. :contentReference[oaicite:37]{index=37}
-
----
-
 ## Guidance for referees and panel members
 *(This section is included so you can share the same link when inviting reviewers/panelists.)*
 
@@ -186,6 +174,8 @@ External reviewers provide written, criteria-based assessments using the templat
 - Evaluators must **not** upload/share application content with external services that store/reuse/train on data (including generative AI tools and online translation services). :contentReference[oaicite:41]{index=41}
 - Evaluators must not do general web searches about applicants; bibliographic databases may be used only to clarify specific outputs. :contentReference[oaicite:42]{index=42}
 - Conflicts must be declared promptly; conflicted members do not act as rapporteurs, do not participate in discussion/scoring/ranking/reporting, and leave the room/disconnect for the relevant agenda item. :contentReference[oaicite:43]{index=43}
+
+## FAQs
 
 ---
 
