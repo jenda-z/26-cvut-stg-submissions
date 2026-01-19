@@ -1,63 +1,99 @@
 function onFormSubmit(e) {
-  const PREFIX = "CVUT StG-26-"; 
-  const uploadFormLink = "https://forms.gle/sDYzU2WYTvFtVZfq9";
+  const CONFIG = {
+    PREFIX: "CVUT StG-26-",
+    UPLOAD_FORM_LINK: "https://forms.gle/sDYzU2WYTvFtVZfq9",
+    SUBJECT_DUPLICATE: "[CVUT StG] Duplicate submission detected",
+    SUBJECT_NEW: "[CVUT StG] Your Submission ID + upload link"
+  };
 
   const sheet = e.range.getSheet();
-
-  // debug
-  console.log("Triggered. Row: " + e.range.getRow());
-
   const row = e.range.getRow();
   
-  // Header row is row 1; first response row is row 2 -> sequence starts at 1
-  const seq = row - 1;
-  const submissionId = PREFIX + String(seq).padStart(3, "0");
+  const headers = getHeaders(sheet);
+  const columns = getColumnIndices(headers);
+  
+  if (!columns.email || !columns.submissionId) return;
 
-  // Identify columns by header names
-  const headers = sheet.getRange(1, 1, 1, sheet.getLastColumn()).getValues()[0];
+  const email = getNormalizedEmail(sheet, row, columns.email);
+  const duplicateInfo = checkForDuplicate(sheet, row, columns.email, email);
 
-  const emailCol = headers.indexOf("Email Address") + 1; // for "Collect email addresses"
-  const submissionIdCol = headers.indexOf("SubmissionID") + 1;
-  const dupNoteCol = headers.indexOf("DuplicateNote") + 1;
+  if (duplicateInfo.isDuplicate) {
+    handleDuplicateSubmission(sheet, row, columns, duplicateInfo, email, CONFIG);
+  } else {
+    handleNewSubmission(sheet, row, columns, email, CONFIG);
+  }
+}
 
-  if (!emailCol || !submissionIdCol) return;
+function getHeaders(sheet) {
+  return sheet.getRange(1, 1, 1, sheet.getLastColumn()).getValues()[0];
+}
 
-  const email = String(sheet.getRange(row, emailCol).getValue()).trim().toLowerCase();
+function getColumnIndices(headers) {
+  return {
+    email: headers.indexOf("Email Address") + 1,
+    submissionId: headers.indexOf("SubmissionID") + 1,
+    dupNote: headers.indexOf("DuplicateNote") + 1
+  };
+}
 
-  // Duplicate check: search email in previous rows
-  const emailRange = sheet.getRange(2, emailCol, Math.max(0, row - 2), 1).getValues().flat()
+function getNormalizedEmail(sheet, row, emailCol) {
+  return String(sheet.getRange(row, emailCol).getValue()).trim().toLowerCase();
+}
+
+function checkForDuplicate(sheet, row, emailCol, email) {
+  if (row <= 2) return { isDuplicate: false };
+
+  const emailRange = sheet.getRange(2, emailCol, row - 2, 1)
+    .getValues()
+    .flat()
     .map(v => String(v).trim().toLowerCase());
 
-  const firstIndex = emailRange.indexOf(email); // 0-based within emailRange
-  const isDuplicate = firstIndex !== -1;
+  const firstIndex = emailRange.indexOf(email);
+  
+  return {
+    isDuplicate: firstIndex !== -1,
+    firstRow: firstIndex !== -1 ? firstIndex + 2 : null
+  };
+}
 
-  if (isDuplicate) {
-    const firstRow = firstIndex + 2; // because emailRange starts at row 2
-    const originalId = sheet.getRange(firstRow, submissionIdCol).getValue();
+function handleDuplicateSubmission(sheet, row, columns, duplicateInfo, email, config) {
+  const originalId = sheet.getRange(duplicateInfo.firstRow, columns.submissionId).getValue();
 
-    sheet.getRange(row, submissionIdCol).setValue(originalId);
-    if (dupNoteCol) sheet.getRange(row, dupNoteCol).setValue("Duplicate email — reused original SubmissionID");
-
-    MailApp.sendEmail({
-      to: email,
-      subject: "CVUT Starting Grant 2026 — Duplicate submission detected",
-      htmlBody: `We already have a submission from this email.<br><br>
-                 Your Submission ID is: <b>${originalId}</b><br><br>
-                 If you intended to update your submission, please reply to this email.`
-    });
-    return;
+  sheet.getRange(row, columns.submissionId).setValue(originalId);
+  
+  if (columns.dupNote) {
+    sheet.getRange(row, columns.dupNote).setValue("Duplicate email — reused original SubmissionID");
   }
 
-  // First submission: write ID and email it
-  sheet.getRange(row, submissionIdCol).setValue(submissionId);
+  sendDuplicateEmail(email, originalId, config);
+}
 
+function handleNewSubmission(sheet, row, columns, email, config) {
+  const seq = row - 1;
+  const submissionId = config.PREFIX + String(seq).padStart(3, "0");
+
+  sheet.getRange(row, columns.submissionId).setValue(submissionId);
+  sendNewSubmissionEmail(email, submissionId, config);
+}
+
+function sendDuplicateEmail(email, originalId, config) {
   MailApp.sendEmail({
     to: email,
-    subject: "CVUT Starting Grant 2026 — Your Submission ID + upload link",
+    subject: config.SUBJECT_DUPLICATE,
+    htmlBody: `We already have a submission from this email.<br><br>
+               Your Submission ID is: <b>${originalId}</b><br><br>
+               If you intended to update your submission, please reply to this email.`
+  });
+}
+
+function sendNewSubmissionEmail(email, submissionId, config) {
+  MailApp.sendEmail({
+    to: email,
+    subject: config.SUBJECT_NEW,
     htmlBody: `Thank you for your application.<br><br>
                Your Submission ID: <b>${submissionId}</b><br><br>
                Please upload your documents here:<br>
-               ${uploadFormLink}<br><br>
+               ${config.UPLOAD_FORM_LINK}<br><br>
                Enter your Submission ID in the upload form.`
   });
 }
