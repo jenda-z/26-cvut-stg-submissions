@@ -3,7 +3,8 @@ function onFormSubmit(e) {
     PREFIX: "CVUT StG-26-",
     UPLOAD_FORM_LINK: "https://forms.gle/sDYzU2WYTvFtVZfq9",
     SUBJECT_DUPLICATE: "[CVUT StG] Duplicate submission detected",
-    SUBJECT_NEW: "[CVUT StG] Your Submission ID + upload link"
+    SUBJECT_NEW: "[CVUT StG] Your Submission ID + upload link",
+    SIGNATURE: "Best regards,<br>CVUT Starting Grant Team"
   };
 
   const sheet = e.range.getSheet();
@@ -82,7 +83,8 @@ function sendDuplicateEmail(email, originalId, config) {
     subject: config.SUBJECT_DUPLICATE,
     htmlBody: `We already have a submission from this email.<br><br>
                Your Submission ID is: <b>${originalId}</b><br><br>
-               If you intended to update your submission, please reply to this email.`
+               If you intended to update your submission, please reply to this email.<br><br>
+               ${config.SIGNATURE}`
   });
 }
 
@@ -92,8 +94,9 @@ function sendNewSubmissionEmail(email, submissionId, config) {
     subject: config.SUBJECT_NEW,
     htmlBody: `Thank you for your application.<br><br>
                Your Submission ID: <b>${submissionId}</b><br><br>
-               Please upload your documents here:<br>
+               Please upload your documents using this link:<br>
                ${config.UPLOAD_FORM_LINK}<br><br>
-               Enter your Submission ID in the upload form.`
+               In the upload form, enter your Submission ID exactly as shown above.<br><br>
+               ${config.SIGNATURE}`
   });
 }
