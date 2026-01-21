@@ -1,0 +1,130 @@
+% ============================================================
+% CVUT Starting Grant — Scientific Project Description (Template)
+% Headings must match Annex B exactly.
+%
+% Policy implemented here:
+%   - HARD LIMIT: 6 pages TOTAL for the Scientific Project Description
+%     (includes all text, figures, tables, captions, equations, footnotes).
+%   - HARD LIMIT: up to 2 additional pages for REFERENCES ONLY.
+%   - Section "½ page / 1 page / 2 pages" are TARGETS, not hard caps.
+%
+% Quick start:
+%   - Overleaf: upload as main.tex and compile with pdfLaTeX
+%   - Local:    latexmk -pdf -interaction=nonstopmode main.tex
+%
+% Draft mode:  guidance notes and targets are visible.
+% Final mode:  set \guidancefalse and DELETE all \lipsum text.
+% ============================================================
+
+\documentclass[11pt,a4paper]{article}
+
+% --- Page layout (minimum required) ---
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage{setspace}
+\setstretch{1.0} % single (or greater)
+
+% --- Times-based font ---
+\usepackage{newtxtext}
+\usepackage{newtxmath}
+
+% --- Useful basics ---
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage[hidelinks]{hyperref}
+\usepackage{lipsum}
+
+% --- Optional: tidy lists ---
+\usepackage{enumitem}
+\setlist{nosep}
+
+% --- Header/footer (simple page number for applicant self-check) ---
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Project Title (Project Acronym), Principal Investigator Name}
+\rhead{\thepage}
+
+% --- Helper: HARD LIMIT box (draft mode only) ---
+\newcommand{\HardLimitBox}{%
+\vspace*{-0.25\baselineskip}
+\begin{center}
+\fbox{%
+\begin{minipage}{0.96\linewidth}
+\small
+\textbf{Hard limits (submission rules):}
+\begin{itemize}
+  \item \textbf{Scientific Project Description: max 6 pages total} (from the first required heading to the last),
+  including \textbf{all} text, figures, tables, captions, equations, footnotes, and in-text citations.
+  \item \textbf{References: up to 2 additional pages, references only.} No narrative text, appendices, or extra sections.
+  \item Use the \textbf{exact headings} below (no renaming). Content order should follow the headings.
+  \item Formatting: \textbf{A4, \(\ge\)11 pt, margins \(\ge\)2 cm, single spacing or greater}.
+\end{itemize}
+\textbf{Section targets:} The per-section “½ / 1 / 2 page” guidance below is \textbf{indicative only};
+it is \textbf{not} used for formal compliance checks.
+\end{minipage}}
+\end{center}
+\vspace*{0.5\baselineskip}
+}
+
+% --- Helper: per-section TARGET note (draft mode only) ---
+% #1 = target pages; #2 = optional rough word-count guidance
+\newcommand{\TargetNote}[2]{%
+\noindent\textit{Target length (indicative): #1%
+\if\relax\detokenize{#2}\relax\else\space\textemdash\space #2\fi.}\par\vspace{0.25\baselineskip}
+}
+
+\begin{document}
+
+\HardLimitBox
+
+% ============================================================
+% REQUIRED HEADINGS (use exactly these; content below is filler)
+% ============================================================
+
+\section*{Extended Synopsis}
+\TargetNote{about ½ page}{roughly 250--350 words}
+
+\lipsum[1-2]
+
+\section*{State of the Art and Gap}
+\TargetNote{about 1 page}{roughly 500--700 words}
+\lipsum[3-6]
+
+\section*{Objectives and Originality}
+\TargetNote{about ½ page}{roughly 250--350 words}
+\lipsum[7-8]
+
+
+\section*{Approach and Work Plan}
+\TargetNote{about 2 pages}{roughly 1000--1400 words (depends on figures/tables)}
+\lipsum[9-16]
+
+\section*{Feasibility, Risks, and Mitigation}
+\TargetNote{about 1 page}{roughly 500--700 words}
+\lipsum[18-21]
+
+\section*{CTU/Host Unit Alignment and Integration Plan}
+\TargetNote{about 1 page}{roughly 500--700 words}
+\lipsum[22-25]
+
+% ============================================================
+% REFERENCES (optional in this file; include only if your workflow
+% expects references appended in the same PDF)
+% ============================================================
+
+\clearpage
+
+% Option A: manual references
+\begin{thebibliography}{99}
+\bibitem{key1} Author(s). Title. \emph{Journal/Publisher}, Year.
+\bibitem{key2} Author(s). Title. \emph{Journal/Publisher}, Year.
+\end{thebibliography}
+
+% Option B: BibTeX (uncomment if you prefer BibTeX)
+% \bibliographystyle{plain}
+% \bibliography{references}
+
+\noindent\textit{Hard limit: up to 2 additional pages. References only (no narrative text).}\par
+
+\end{document}
