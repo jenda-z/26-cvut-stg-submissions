@@ -1,0 +1,152 @@
+\documentclass[11pt,a4paper]{article}
+
+% --- Page layout (minimum required) ---
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage{setspace}
+\setstretch{1.0} % single (or greater)
+
+% --- Times-based font ---
+\usepackage{newtxtext}
+\usepackage{newtxmath}
+
+% --- Useful basics ---
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\usepackage{latexsym}
+\usepackage{tabularx}
+
+% --- Tidy lists ---
+\usepackage{enumitem}
+\setlist{nosep}
+
+% --- Header/footer (simple page number for applicant self-check) ---
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Applicant's last name}
+\chead{Curriculum vitae and Track Record}
+\rhead{Project acronym}  
+\cfoot{\thepage}
+
+% ============================================================
+% Guidance toggle (recommended)
+%   - Keep \guidancetrue while drafting.
+%   - Switch to \guidancefalse for the final PDF (hides notes/prompts).
+% ============================================================
+\newif\ifguidance
+\guidancetrue
+% \guidancefalse
+
+% --- Helper: HARD LIMIT box (draft mode only) ---
+\newcommand{\HardLimitBox}{%
+\ifguidance
+\vspace*{-0.25\baselineskip}
+\begin{center}
+\fbox{%
+\begin{minipage}{0.96\linewidth}
+\small
+\textbf{Hard limits (submission rules):}
+\begin{itemize}
+  \item Max \textbf{4 pages} total.
+  \item Formatting: \textbf{A4, \(\ge\)11 pt, margins \(\ge\)2 cm, single spacing or greater}.
+\end{itemize}
+\noindent \textbf{Note:}
+\begin{itemize}
+\item You may modify this template if necessary.
+\item Practical tip: Draft with \texttt{\textbackslash guidancetrue}, finalize with  \texttt{\textbackslash guidancefalse}.
+\end{itemize}
+\end{minipage}}
+\end{center}
+\vspace*{0.5\baselineskip}
+\fi
+}
+
+\newcommand{\hint}[1]{\ifguidance{\noindent\color{gray}\small #1}\par\fi}
+
+\begin{document}
+
+\HardLimitBox
+
+\section*{Personal details}
+
+\begin{description}
+\item[Family name, First name:]
+
+\item[Researcher unique identifier(s) (ORCID, Research ID, etc.):]
+
+\item[URL for web site:]
+\end{description}
+
+\subsection*{Education and key qualifications}
+
+\begin{tabularx}{\linewidth}{@{}lX@{}}
+\textbf{DD/MM/YYYY} & \textbf{Ph.D.}\\
+& Name of Faculty/ Department, Name of University/ Institution, Country\\
+& Name of Ph.D. Supervisor\\[4pt]
+\textbf{YYYY} & \textbf{Master}\\
+& Name of Faculty/ Department, Name of University/ Institution, Country\\
+\end{tabularx}
+
+\subsection*{Current position(s)}
+
+\begin{tabularx}{\linewidth}{@{}lX@{}}
+\textbf{YYYY -- YYYY} & \textbf{Current Position}\\
+& Name of Faculty/ Department, Name of University/ Institution, Country\\[4pt]
+\textbf{YYYY -- YYYY} & \textbf{Current Position}\\
+& Name of Faculty/ Department, Name of University/ Institution, Country\\
+\end{tabularx}
+
+\subsection*{Previous position(s)}
+
+\begin{tabularx}{\linewidth}{@{}lX@{}}
+\textbf{YYYY -- YYYY} & \textbf{Position held}\\
+& Name of Faculty/ Department, Name of University/ Institution, Country\\[4pt]
+\textbf{YYYY -- YYYY} & \textbf{Position held}\\
+& Name of Faculty/ Department, Name of University/ Institution, Country\\
+\end{tabularx}
+
+
+\section*{Research achievements and peer recognition}
+
+\subsection*{Research achievements}
+
+\hint{Provide up to ten research outputs demonstrating how you advanced knowledge in your field (emphasise recent achievements). Outputs may include publications, preprints, books/chapters, proceedings, data sets, software, patents/licenses, standards, start-ups, or other relevant outputs. Optionally add brief factual notes on significance and your role.}
+
+\begin{enumerate}[leftmargin=*,itemsep=4pt]
+  \item Output 1 -- bibliographic entry / description.\\
+        \hint{Optional: short factual note on significance and your role.}
+  \item Output 2 -- bibliographic entry / description.\\
+        \hint{Optional: short factual note.}
+\end{enumerate}
+
+\subsection*{Peer recognition}
+
+\hint{List selected examples of significant recognition (if applicable): prizes/awards, fellowships, elected memberships, invited presentations, etc. Optionally add a short significance note.}
+
+\begin{itemize}[leftmargin=*,itemsep=3pt]
+  \item Prize / award / fellowship / membership / invited talk, year\\
+  \hint{Optional: short significance note.}
+  % \item \textit{Another item}
+\end{itemize}
+
+\section*{Additional information}
+
+\hint{You may provide additional information to give context to the evaluation panels when assessing your achievements and recognition.}
+
+\subsection*{Career breaks, diverse career paths and major life events}
+
+\hint{Short factual explanation of career breaks or diverse paths (e.g., secondments, part-time work, time in other sectors), major life events (e.g., long-term illness), or pandemic-related constraints affecting research productivity.}
+
+\subsection*{Other contributions to the research community}
+
+\hint{List noteworthy contributions beyond research outputs and peer recognition (e.g., reviewing/editorship, committee work, mentoring, leadership roles) with short explanations.}
+
+\begin{itemize}[leftmargin=*,itemsep=3pt]
+  \item Contribution\\
+  \hint{Optional: short explanation.}
+\end{itemize}
+
+\end{document}

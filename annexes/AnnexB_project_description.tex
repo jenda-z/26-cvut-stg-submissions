@@ -1,0 +1,225 @@
+% ============================================================
+% CVUT Starting Grant — Scientific Project Description (Template)
+% NOTE: Headings must match Annex B exactly.
+%
+% Policy implemented here:
+%   - HARD LIMIT: 6 pages TOTAL for the Scientific Project Description
+%     (includes all text, figures, tables, captions, equations, footnotes, and in-text citations).
+%   - HARD LIMIT: up to 2 additional pages for REFERENCES ONLY (references only; no narrative text).
+%   - Section "½ page / 1 page / 2 pages" are TARGETS, not hard caps.
+%
+% Quick start:
+%   - Overleaf: upload as main.tex and compile with pdfLaTeX
+%   - Local:    latexmk -pdf -interaction=nonstopmode main.tex
+%
+% Draft mode:  guidance notes, target lengths, and assessment-criteria prompts are visible.
+% Final mode:  set \guidancefalse and DELETE all \lipsum text.
+% ============================================================
+
+\documentclass[11pt,a4paper]{article}
+
+% --- Page layout (minimum required) ---
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage{setspace}
+\setstretch{1.0} % single (or greater)
+
+% --- Times-based font ---
+\usepackage{newtxtext}
+\usepackage{newtxmath}
+
+% --- Useful basics ---
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage[hidelinks]{hyperref}
+
+% --- Tidy lists ---
+\usepackage{enumitem}
+\setlist{nosep}
+
+% --- Header/footer (simple page number for applicant self-check) ---
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Applicant's last name}
+\chead{Scientific project description}
+\rhead{Project Acronym}  
+\cfoot{\thepage}
+
+% ============================================================
+% Guidance toggle (recommended)
+%   - Keep \guidancetrue while drafting.
+%   - Switch to \guidancefalse for the final PDF (hides notes/prompts).
+% ============================================================
+\newif\ifguidance
+\guidancetrue
+% \guidancefalse
+
+% --- Helper: HARD LIMIT box (draft mode only) ---
+\newcommand{\HardLimitBox}{%
+\ifguidance
+\vspace*{-0.25\baselineskip}
+\begin{center}
+\fbox{%
+\begin{minipage}{0.96\linewidth}
+\small
+\textbf{Hard limits (submission rules):}
+\begin{itemize}
+  \item \textbf{Scientific Project Description: max 6 pages total} (from the first required heading to the last),
+  including \textbf{all} text, figures, tables, captions, equations, footnotes, and in-text citations.
+  \item \textbf{References: up to 2 additional pages, references only.} No narrative text, appendices, or extra sections.
+  \item Use the \textbf{exact headings} below (no renaming). Content order should follow the headings.
+  \item Formatting: \textbf{A4, \(\ge\)11 pt, margins \(\ge\)2 cm, single spacing or greater}.
+  \item Practical tip: Draft with \texttt{\textbackslash guidancetrue}, finalize with \texttt{\textbackslash guidancefalse}.
+\end{itemize}
+\textbf{Section targets:} The “½ / 1 / 2 page” guidance below is \textbf{indicative only}
+and is \textbf{not} used for formal compliance checks.
+\end{minipage}}
+\end{center}
+\vspace*{0.5\baselineskip}
+\fi
+}
+
+% --- Helper: per-section TARGET note (draft mode only) ---
+% #1 = target pages; #2 = optional rough word-count guidance
+\newcommand{\TargetNote}[2]{%
+\ifguidance
+\noindent\textit{Target length (indicative): #1%
+\if\relax\detokenize{#2}\relax\else\space\textemdash\space #2\fi.}\par\vspace{0.25\baselineskip}
+\fi
+}
+
+% --- Helper: assessment criteria prompt (draft mode only) ---
+\newcommand{\AssessmentCriteria}[1]{%
+\ifguidance
+{\color{gray}
+\vspace{-0.25\baselineskip}
+\begin{quote}
+\small
+\textbf{Assessment criteria (referees will consider):}
+\begin{itemize}[leftmargin=*]
+#1
+\end{itemize}
+\end{quote}}
+\fi
+}
+
+% --- Optional helper: a compact subheading for within-section structure ---
+\newcommand{\Subhead}[1]{\vspace{0.25\baselineskip}\noindent\textbf{#1}\par}
+
+\begin{document}
+
+\HardLimitBox
+
+% ============================================================
+% REQUIRED HEADINGS (use exactly these; content below is filler)
+% ============================================================
+
+\section*{Extended Synopsis}
+\TargetNote{about ½ page}{roughly 250--350 words}
+\AssessmentCriteria{
+  \item Clarity of the central idea and its novelty.
+  \item Significance and expected scientific/technological impact.
+  \item Coherence of objectives, approach, and expected outcomes.
+  \item Overall readability and conciseness for non-specialists in the broader field.
+}
+
+\section*{State of the Art and Gap}
+\TargetNote{about 1 page}{roughly 500--700 words}
+\AssessmentCriteria{
+  \item Demonstrated understanding of the international state of the art.
+  \item Clear identification of the key gap/limitation and why it matters now.
+  \item Appropriate positioning versus the most relevant competing approaches/results.
+  \item Use of key references (quality over quantity).
+}
+
+\section*{Objectives and Originality}
+\TargetNote{about ½ page}{roughly 250--350 words}
+\AssessmentCriteria{
+  \item Objectives are clear, focused, and realistically achievable within the project duration.
+  \item Originality and ambition (incl. high-risk/high-gain elements where appropriate).
+  \item Expected contribution to knowledge and/or enabling technology.
+  \item Internal consistency: objectives follow logically from the identified gap.
+}
+
+\section*{Approach and Work Plan}
+\TargetNote{about 2 pages}{roughly 1000--1400 words (depends on figures/tables)}
+\AssessmentCriteria{
+  \item Appropriateness and rigor of the proposed methodology.
+  \item Quality of the work plan (logic, work packages/tasks, milestones, deliverables).
+  \item Evidence of feasibility (preliminary results, access to methods/data, partner inputs).
+  \item Alignment between objectives, methods, and resources (people/equipment/time).
+  \item Where relevant: plans for data, software, and research reproducibility.
+}
+% Optional internal structure (delete if not needed)
+\ifguidance
+\Subhead{Suggested structure (optional)}
+\begin{itemize}[leftmargin=*]
+  \item Work packages / tasks (WP1--WPn) with clear outputs
+  \item Milestones and decision points
+  \item Optional: a small Gantt-style figure (counts toward the 6-page limit)
+\end{itemize}
+\fi
+
+\section*{Feasibility, Risks, and Mitigation}
+\TargetNote{about 1 page}{roughly 500--700 words}
+\AssessmentCriteria{
+  \item Key risks are identified (scientific/technical/operational) and prioritised.
+  \item Mitigation strategies are credible (fallback options, alternative methods, stop/go criteria).
+  \item \textbf{Timeline realism:} critical-path dependencies are understood and buffered.
+  \item \textbf{Timing risks and contingency:} hiring, procurement, approvals/ethics, data access, facility availability.
+  \item Overall plausibility that objectives can be delivered within the project duration.
+}
+% Optional internal structure (recommended; concise)
+\ifguidance
+\Subhead{Suggested structure (recommended)}
+\begin{itemize}[leftmargin=*]
+  \item Top 3--5 risks (what can go wrong)
+  \item Mitigation (what you will do)
+  \item \textbf{Timing risks \& contingency plan} (critical path + what you will do if delayed)
+\end{itemize}
+\fi
+
+\section*{Fit with CTU and Research Group Setup}
+\TargetNote{about 1 page}{roughly 500--700 words}
+\AssessmentCriteria{
+  \item Credibility of the PI’s plan to establish an independent research group at CTU.
+  \item Quality of the recruitment and team-building plan (roles, timing, supervision, openness of search).
+  \item Fit with CTU: clarity of the group’s niche and how it complements existing strengths.
+  \item Integration plan: access to infrastructure/support and collaborations/mentoring that support independence and growth.
+  \item Sustainability beyond the grant (follow-up funding strategy and long-term embedding); the plan should remain robust under host matching after shortlisting.
+}
+\ifguidance
+\Subhead{Suggested structure (optional)}
+\begin{itemize}[leftmargin=*]
+  \item Group vision and niche at CTU (2--3 sentences)
+  \item Team and recruitment plan (roles, indicative timing, supervision; open search approach)
+  \item Independence and integration (mentoring/advisory arrangements; internal/external collaborations; access to key infrastructure)
+  \item Sustainability (follow-up funding plan; contribution to CTU research and training)
+  \item Optional: preferred host unit(s) (non-binding); avoid repeating formal host commitments provided in the host unit statement
+\end{itemize}
+\fi
+
+% ============================================================
+% REFERENCES (include only if your workflow expects references appended
+% in the same PDF; otherwise submit references as a separate PDF)
+% ============================================================
+
+\clearpage
+\section*{References}
+\ifguidance
+\noindent\textit{Hard limit: up to 2 additional pages. References only (no narrative text).}\par
+\vspace{0.25\baselineskip}
+\fi
+
+% Option A: manual references
+\begin{thebibliography}{99}
+\bibitem{key1} Author(s). Title. \emph{Journal/Publisher}, Year.
+\bibitem{key2} Author(s). Title. \emph{Journal/Publisher}, Year.
+\end{thebibliography}
+
+% Option B: BibTeX (uncomment if you prefer BibTeX)
+% \bibliographystyle{plain}
+% \bibliography{references}
+
+\end{document}
