@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:y="http://www.yworks.com/xml/graphml"
+        xmlns:graphml="http://www.yworks.com/xml/graphml/3"
+        xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns
+         http://www.yworks.com/xml/schema/graphml/1.1/ygraphml.xsd">
+
+    <key id="d0" for="node" yfiles.type="nodegraphics"/>
+    <key id="d1" for="edge" yfiles.type="edgegraphics"/>
+    <key id="d2" for="graph" attr.name="label" attr.type="string"/>
+
+    <graph id="G" edgedefault="directed">
+        <data key="d2">CVUT_StG_2026_process_source – panel view</data>
+
+    <node id="publish">
+            <data key="d0">
+                <y:ShapeNode>
+                    <y:Geometry x="60" y="60" width="240" height="75"/>
+                    <y:Fill color="#E8F0FE" transparent="false"/>
+                    <y:BorderStyle color="#1A73E8" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" textColor="#000000" visible="true">Publish call &amp; annexes
+Call opens: 02 Feb 2026</y:NodeLabel>
+                    <y:Shape type="roundrectangle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+    <node id="deadline">
+            <data key="d0">
+                <y:ShapeNode>
+                    <y:Geometry x="300" y="210" width="220" height="55"/>
+                    <y:Fill color="#FCE8E6" transparent="false"/>
+                    <y:BorderStyle color="#C5221F" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" textColor="#000000" visible="true">Submission deadline
+30 Mar 2026 (23:59 CET)</y:NodeLabel>
+                    <y:Shape type="roundrectangle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+    <node id="assignRap">
+            <data key="d0">
+                <y:ShapeNode>
+                    <y:Geometry x="540" y="360" width="240" height="75"/>
+                    <y:Fill color="#E8F0FE" transparent="false"/>
+                    <y:BorderStyle color="#1A73E8" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" textColor="#000000" visible="true">Assign rapporteurs (Phase 1)</y:NodeLabel>
+                    <y:Shape type="roundrectangle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+    <node id="phase1">
+            <data key="d0">
+                <y:ShapeNode>
+                    <y:Geometry x="780" y="510" width="240" height="75"/>
+                    <y:Fill color="#E8F0FE" transparent="false"/>
+                    <y:BorderStyle color="#1A73E8" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" textColor="#000000" visible="true">Phase 1 evaluation (panel only)
+Shortlisting package</y:NodeLabel>
+                    <y:Shape type="roundrectangle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+    <node id="shortlist">
+            <data key="d0">
+                <y:ShapeNode>
+                    <y:Geometry x="1020" y="510" width="220" height="55"/>
+                    <y:Fill color="#FCE8E6" transparent="false"/>
+                    <y:BorderStyle color="#C5221F" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" textColor="#000000" visible="true">Shortlist decision
+by 14 Apr 2026</y:NodeLabel>
+                    <y:Shape type="roundrectangle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+    <node id="assignCoRap">
+            <data key="d0">
+                <y:ShapeNode>
+                    <y:Geometry x="1260" y="360" width="240" height="75"/>
+                    <y:Fill color="#E8F0FE" transparent="false"/>
+                    <y:BorderStyle color="#1A73E8" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" textColor="#000000" visible="true">Assign co-rapporteur (all shortlisted)
+after shortlisting</y:NodeLabel>
+                    <y:Shape type="roundrectangle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+    <node id="inviteRev">
+            <data key="d0">
+                <y:ShapeNode>
+                    <y:Geometry x="1500" y="60" width="240" height="75"/>
+                    <y:Fill color="#E8F0FE" transparent="false"/>
+                    <y:BorderStyle color="#1A73E8" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" textColor="#000000" visible="true">Invite external reviewers</y:NodeLabel>
+                    <y:Shape type="roundrectangle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+    <node id="extRev">
+            <data key="d0">
+                <y:ShapeNode>
+                    <y:Geometry x="1740" y="660" width="240" height="75"/>
+                    <y:Fill color="#E8F0FE" transparent="false"/>
+                    <y:BorderStyle color="#1A73E8" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" textColor="#000000" visible="true">External peer reviews
+20 Apr – 06 May 2026</y:NodeLabel>
+                    <y:Shape type="roundrectangle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+    <node id="interview">
+            <data key="d0">
+                <y:ShapeNode>
+                    <y:Geometry x="1980" y="810" width="220" height="55"/>
+                    <y:Fill color="#FCE8E6" transparent="false"/>
+                    <y:BorderStyle color="#C5221F" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" textColor="#000000" visible="true">Interviews (ERC-style)
+11–15 May 2026</y:NodeLabel>
+                    <y:Shape type="roundrectangle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+    <node id="rank">
+            <data key="d0">
+                <y:ShapeNode>
+                    <y:Geometry x="2220" y="510" width="220" height="55"/>
+                    <y:Fill color="#FCE8E6" transparent="false"/>
+                    <y:BorderStyle color="#C5221F" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" textColor="#000000" visible="true">Final ranking approved by panel
+by 27 May 2026</y:NodeLabel>
+                    <y:Shape type="roundrectangle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+    <node id="results">
+            <data key="d0">
+                <y:ShapeNode>
+                    <y:Geometry x="2460" y="60" width="220" height="55"/>
+                    <y:Fill color="#FCE8E6" transparent="false"/>
+                    <y:BorderStyle color="#C5221F" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" textColor="#000000" visible="true">Results announced
+by 29 May 2026</y:NodeLabel>
+                    <y:Shape type="roundrectangle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+    <node id="sign">
+            <data key="d0">
+                <y:ShapeNode>
+                    <y:Geometry x="2700" y="60" width="220" height="55"/>
+                    <y:Fill color="#FCE8E6" transparent="false"/>
+                    <y:BorderStyle color="#C5221F" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" textColor="#000000" visible="true">Grant agreement signed
+(host commitments included)</y:NodeLabel>
+                    <y:Shape type="roundrectangle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+
+    <edge id="e1" source="assignRap" target="phase1">
+            <data key="d1">
+                <y:PolyLineEdge>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="standard"/>
+                    
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+    <edge id="e2" source="phase1" target="shortlist">
+            <data key="d1">
+                <y:PolyLineEdge>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="standard"/>
+                    
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+    <edge id="e3" source="shortlist" target="assignCoRap">
+            <data key="d1">
+                <y:PolyLineEdge>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="standard"/>
+                    
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+    <edge id="e4" source="assignCoRap" target="inviteRev">
+            <data key="d1">
+                <y:PolyLineEdge>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="standard"/>
+                    
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+    <edge id="e5" source="inviteRev" target="extRev">
+            <data key="d1">
+                <y:PolyLineEdge>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="standard"/>
+                    
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+    <edge id="e6" source="extRev" target="interview">
+            <data key="d1">
+                <y:PolyLineEdge>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="standard"/>
+                    
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+    <edge id="e7" source="interview" target="rank">
+            <data key="d1">
+                <y:PolyLineEdge>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="standard"/>
+                    
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+    <edge id="e8" source="rank" target="results">
+            <data key="d1">
+                <y:PolyLineEdge>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="standard"/>
+                    
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+
+    </graph>
+</graphml>

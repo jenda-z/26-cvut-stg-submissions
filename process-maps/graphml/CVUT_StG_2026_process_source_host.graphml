@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:y="http://www.yworks.com/xml/graphml"
+        xmlns:graphml="http://www.yworks.com/xml/graphml/3"
+        xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns
+         http://www.yworks.com/xml/schema/graphml/1.1/ygraphml.xsd">
+
+    <key id="d0" for="node" yfiles.type="nodegraphics"/>
+    <key id="d1" for="edge" yfiles.type="edgegraphics"/>
+    <key id="d2" for="graph" attr.name="label" attr.type="string"/>
+
+    <graph id="G" edgedefault="directed">
+        <data key="d2">CVUT_StG_2026_process_source – host view</data>
+
+    <node id="publish">
+            <data key="d0">
+                <y:ShapeNode>
+                    <y:Geometry x="60" y="60" width="240" height="75"/>
+                    <y:Fill color="#E8F0FE" transparent="false"/>
+                    <y:BorderStyle color="#1A73E8" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" textColor="#000000" visible="true">Publish call &amp; annexes
+Call opens: 02 Feb 2026</y:NodeLabel>
+                    <y:Shape type="roundrectangle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+    <node id="deadline">
+            <data key="d0">
+                <y:ShapeNode>
+                    <y:Geometry x="300" y="210" width="220" height="55"/>
+                    <y:Fill color="#FCE8E6" transparent="false"/>
+                    <y:BorderStyle color="#C5221F" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" textColor="#000000" visible="true">Submission deadline
+30 Mar 2026 (23:59 CET)</y:NodeLabel>
+                    <y:Shape type="roundrectangle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+    <node id="shortlist">
+            <data key="d0">
+                <y:ShapeNode>
+                    <y:Geometry x="540" y="360" width="220" height="55"/>
+                    <y:Fill color="#FCE8E6" transparent="false"/>
+                    <y:BorderStyle color="#C5221F" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" textColor="#000000" visible="true">Shortlist decision
+by 14 Apr 2026</y:NodeLabel>
+                    <y:Shape type="roundrectangle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+    <node id="hostMatch">
+            <data key="d0">
+                <y:ShapeNode>
+                    <y:Geometry x="780" y="60" width="240" height="75"/>
+                    <y:Fill color="#E8F0FE" transparent="false"/>
+                    <y:BorderStyle color="#1A73E8" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" textColor="#000000" visible="true">Facilitate host-matching for shortlisted PIs
+(Variant 1: after shortlisting)</y:NodeLabel>
+                    <y:Shape type="roundrectangle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+    <node id="hostFeas">
+            <data key="d0">
+                <y:ShapeNode>
+                    <y:Geometry x="1020" y="510" width="240" height="75"/>
+                    <y:Fill color="#E8F0FE" transparent="false"/>
+                    <y:BorderStyle color="#1A73E8" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" textColor="#000000" visible="true">Host feasibility check
+(space/infrastructure/support)</y:NodeLabel>
+                    <y:Shape type="roundrectangle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+    <node id="interview">
+            <data key="d0">
+                <y:ShapeNode>
+                    <y:Geometry x="1260" y="660" width="220" height="55"/>
+                    <y:Fill color="#FCE8E6" transparent="false"/>
+                    <y:BorderStyle color="#C5221F" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" textColor="#000000" visible="true">Interviews (ERC-style)
+11–15 May 2026</y:NodeLabel>
+                    <y:Shape type="roundrectangle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+    <node id="results">
+            <data key="d0">
+                <y:ShapeNode>
+                    <y:Geometry x="1500" y="60" width="220" height="55"/>
+                    <y:Fill color="#FCE8E6" transparent="false"/>
+                    <y:BorderStyle color="#C5221F" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" textColor="#000000" visible="true">Results announced
+by 29 May 2026</y:NodeLabel>
+                    <y:Shape type="roundrectangle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+    <node id="negotiate">
+            <data key="d0">
+                <y:ShapeNode>
+                    <y:Geometry x="1740" y="60" width="240" height="75"/>
+                    <y:Fill color="#E8F0FE" transparent="false"/>
+                    <y:BorderStyle color="#1A73E8" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" textColor="#000000" visible="true">Post-selection negotiations (rank order)
+conclude by 30 Jun 2026</y:NodeLabel>
+                    <y:Shape type="roundrectangle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+    <node id="hostCommit">
+            <data key="d0">
+                <y:ShapeNode>
+                    <y:Geometry x="1980" y="510" width="240" height="75"/>
+                    <y:Fill color="#E8F0FE" transparent="false"/>
+                    <y:BorderStyle color="#1A73E8" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" textColor="#000000" visible="true">Host commitments issued
+(co-funding/support/employment setup)</y:NodeLabel>
+                    <y:Shape type="roundrectangle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+    <node id="negOK">
+            <data key="d0">
+                <y:ShapeNode>
+                    <y:Geometry x="2220" y="60" width="120" height="70"/>
+                    <y:Fill color="#FFF7E6" transparent="false"/>
+                    <y:BorderStyle color="#B26A00" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" textColor="#000000" visible="true">Negotiations successful?</y:NodeLabel>
+                    <y:Shape type="diamond"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+    <node id="nextRank">
+            <data key="d0">
+                <y:ShapeNode>
+                    <y:Geometry x="2460" y="60" width="240" height="75"/>
+                    <y:Fill color="#E8F0FE" transparent="false"/>
+                    <y:BorderStyle color="#1A73E8" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" textColor="#000000" visible="true">Offer passes to next ranked</y:NodeLabel>
+                    <y:Shape type="roundrectangle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+    <node id="sign">
+            <data key="d0">
+                <y:ShapeNode>
+                    <y:Geometry x="2700" y="60" width="220" height="55"/>
+                    <y:Fill color="#FCE8E6" transparent="false"/>
+                    <y:BorderStyle color="#C5221F" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" textColor="#000000" visible="true">Grant agreement signed
+(host commitments included)</y:NodeLabel>
+                    <y:Shape type="roundrectangle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+
+    <edge id="e1" source="shortlist" target="hostMatch">
+            <data key="d1">
+                <y:PolyLineEdge>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="standard"/>
+                    
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+    <edge id="e2" source="hostMatch" target="hostFeas">
+            <data key="d1">
+                <y:PolyLineEdge>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="standard"/>
+                    
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+    <edge id="e3" source="results" target="negotiate">
+            <data key="d1">
+                <y:PolyLineEdge>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="standard"/>
+                    <y:EdgeLabel alignment="center" fontFamily="Dialog" fontSize="11" textColor="#000000" visible="true">(if no review request)</y:EdgeLabel>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+    <edge id="e4" source="negotiate" target="hostCommit">
+            <data key="d1">
+                <y:PolyLineEdge>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="standard"/>
+                    
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+    <edge id="e5" source="hostCommit" target="negOK">
+            <data key="d1">
+                <y:PolyLineEdge>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="standard"/>
+                    
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+    <edge id="e6" source="negOK" target="sign">
+            <data key="d1">
+                <y:PolyLineEdge>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="standard"/>
+                    <y:EdgeLabel alignment="center" fontFamily="Dialog" fontSize="11" textColor="#000000" visible="true">Yes</y:EdgeLabel>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+    <edge id="e7" source="negOK" target="nextRank">
+            <data key="d1">
+                <y:PolyLineEdge>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="standard"/>
+                    <y:EdgeLabel alignment="center" fontFamily="Dialog" fontSize="11" textColor="#000000" visible="true">No</y:EdgeLabel>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+    <edge id="e8" source="nextRank" target="negotiate">
+            <data key="d1">
+                <y:PolyLineEdge>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="standard"/>
+                    <y:EdgeLabel alignment="center" fontFamily="Dialog" fontSize="11" textColor="#000000" visible="true">loop</y:EdgeLabel>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+
+    </graph>
+</graphml>

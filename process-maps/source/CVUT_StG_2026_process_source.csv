@@ -1,0 +1,80 @@
+kind,node_id,label,type,role,order,views,source,target,edge_label
+node,publish,"Publish call & annexes
+Call opens: 02 Feb 2026",task,Secretariat,1,all,,,
+node,panel_form,"Form evaluation panel
+(during submission period)",task,Secretariat,2,secretariat,,,
+node,reviewer_pool,"Build external reviewer pool
+(during submission period)",task,Secretariat,3,secretariat,,,
+node,submit,"Prepare & submit proposal
+02 Feb – 30 Mar 2026",task,Applicant,4,applicant,,,
+node,deadline,"Submission deadline
+30 Mar 2026 (23:59 CET)",milestone,System,5,all,,,
+node,check,"Eligibility & completeness check
+by 07 Apr 2026",task,Secretariat,6,secretariat,,,
+node,admissible,Admissible?,decision,Secretariat,7,secretariat,,,
+node,reject,"Not evaluated
+(ineligible/incomplete)
+Notify applicant",task,Secretariat,8,secretariat,,,
+node,assignRap,Assign rapporteurs (Phase 1),task,Chair/Vice-Chair,9,panel,,,
+node,phase1,"Phase 1 evaluation (panel only)
+Shortlisting package",task,Panel,10,panel,,,
+node,shortlist,"Shortlist decision
+by 14 Apr 2026",milestone,Panel,11,all,,,
+node,assignCoRap,"Assign co-rapporteur (all shortlisted)
+after shortlisting",task,Chair/Vice-Chair,12,panel,,,
+node,hostMatch,"Facilitate host-matching for shortlisted PIs
+(Variant 1: after shortlisting)",task,Secretariat,13,"host,applicant,secretariat",,,
+node,hostFeas,"Host feasibility check
+(space/infrastructure/support)",task,Host unit,14,host,,,
+node,inviteRev,Invite external reviewers,task,Secretariat,15,"secretariat,panel",,,
+node,extRev,"External peer reviews
+20 Apr – 06 May 2026",task,External reviewers,16,"reviewers,secretariat,panel,applicant",,,
+node,interview,"Interviews (ERC-style)
+11–15 May 2026",milestone,Panel & Applicant,17,all,,,
+node,rank,"Final ranking approved by panel
+by 27 May 2026",milestone,Panel,18,"panel,secretariat",,,
+node,results,"Results announced
+by 29 May 2026",milestone,Secretariat,19,all,,,
+node,procReview,"Procedural review request?
+(5-day window)",decision,Secretariat,20,secretariat,,,
+node,negotiate,"Post-selection negotiations (rank order)
+conclude by 30 Jun 2026",task,Secretariat,21,"host,secretariat,applicant",,,
+node,hostCommit,"Host commitments issued
+(co-funding/support/employment setup)",task,Host unit,22,host,,,
+node,negOK,Negotiations successful?,decision,Secretariat,23,"host,secretariat",,,
+node,nextRank,Offer passes to next ranked,task,Secretariat,24,"host,secretariat",,,
+node,sign,"Grant agreement signed
+(host commitments included)",milestone,Secretariat,25,all,,,
+node,startWin,"Project start window
+up to 12 months after signing",task,Applicant,26,"applicant,secretariat",,,
+node,start,"Project starts & implementation
+(up to 3 years; possible exceptional +1)",milestone,Applicant,27,"applicant,secretariat",,,
+edge,,,,,,all,publish,submit,
+edge,,,,,,secretariat,publish,panel_form,parallel
+edge,,,,,,secretariat,publish,reviewer_pool,parallel
+edge,,,,,,all,submit,deadline,
+edge,,,,,,secretariat,deadline,check,
+edge,,,,,,secretariat,check,admissible,
+edge,,,,,,secretariat,admissible,reject,No
+edge,,,,,,"secretariat,panel",admissible,assignRap,Yes
+edge,,,,,,panel,assignRap,phase1,
+edge,,,,,,panel,phase1,shortlist,
+edge,,,,,,panel,shortlist,assignCoRap,
+edge,,,,,,"host,applicant,secretariat",shortlist,hostMatch,
+edge,,,,,,"panel,secretariat",assignCoRap,inviteRev,
+edge,,,,,,host,hostMatch,hostFeas,
+edge,,,,,,"host,secretariat",hostFeas,inviteRev,
+edge,,,,,,"secretariat,reviewers,panel",inviteRev,extRev,
+edge,,,,,,all,extRev,interview,
+edge,,,,,,"panel,secretariat",interview,rank,
+edge,,,,,,"panel,secretariat",rank,results,
+edge,,,,,,secretariat,results,procReview,
+edge,,,,,,secretariat,procReview,negotiate,No / resolved
+edge,,,,,,"applicant,host",results,negotiate,(if no review request)
+edge,,,,,,"host,secretariat",negotiate,hostCommit,
+edge,,,,,,"host,secretariat",hostCommit,negOK,
+edge,,,,,,"host,secretariat",negOK,sign,Yes
+edge,,,,,,"host,secretariat",negOK,nextRank,No
+edge,,,,,,"host,secretariat",nextRank,negotiate,loop
+edge,,,,,,"applicant,secretariat",sign,startWin,
+edge,,,,,,"applicant,secretariat",startWin,start,
