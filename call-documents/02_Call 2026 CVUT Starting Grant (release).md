@@ -12,18 +12,15 @@ This Call is issued pursuant to the *Principles of the ČVUT Starting Grant Comp
    The ČVUT Starting Grant supports excellent early-career researchers in establishing new independent research directions at CTU. The Competition is conducted as a two-phase process:
    1. a competitive scientific selection resulting in a ranked list of proposals; and
    2. post-selection host matching and negotiations on institutional conditions of project implementation, culminating in the grant agreement.
-
 2. **Thematic areas (organizational routing only)**  
    1. For organizational purposes (e.g., allocation of rapporteurs and external expertise), each proposal is assigned to one thematic area aligned with CTU’s main scientific domains, as specified in this Call. This assignment does not create separate evaluation panels and does not constrain the scientific scope of eligible proposals. Cross-cutting and emerging topics are welcome.
-
    2. The thematic areas for the 2026 Call are:
       1. **ENG:** Engineering and Technology;  
       2. **SMI:** Mathematics, Informatics, and Natural Sciences; and   
       3. **ASH:** Arts, Social Sciences, and Humanities (with clear relevance to CTU’s profile).
-
 3. **Call timeline (indicative)**  
    1. Call opens: 2 February 2026  
-   2. Submission deadline: 30 March 2026 (11:59 PM CET)  
+   2. Submission deadline: 30 March 2026 (11:59 PM Central European Time (CET))  
    3. Eligibility/completeness check completed by: 7 April 2026  
    4. Shortlist decision by: 14 April 2026  
    5. External peer review: 20 April–6 May 2026  
@@ -33,7 +30,6 @@ This Call is issued pursuant to the *Principles of the ČVUT Starting Grant Comp
    9. Results announced by: 29 May 2026  
    10. Post-selection negotiations concluded by: 30 June 2026  
    11. Project start window: up to 12 months after signing (see Article I.4)
-
 4. **Project start date and extensions**
    1. The project start date is agreed in the grant agreement and must normally fall within the start window in Article I.3.11.
    2. **No-cost extension (default).** Upon a justified request, CTU may grant **one** time-only extension of the project duration of up to **12 months** to complete the project using unspent funds (including eligible carry-over), in particular due to completion needs and/or documented interruptions. This extension does **not** increase the approved funding volume.
@@ -47,16 +43,13 @@ This Call is issued pursuant to the *Principles of the ČVUT Starting Grant Comp
       2. a secure document upload area for the full proposal and required attachments.  
       Submission instructions (including file formats and naming) are provided in Annex C.
    2. A proposal is considered submitted once the portal issues an automatic confirmation with a timestamp.
-
 2. **Technical failures and late submission**  
    If an applicant encounters a technical issue preventing timely submission, they must contact Call administration without undue delay. In exceptional and duly justified cases, the administration may accept submissions outside the portal to ensure equal treatment; any such submission must be recorded and time-stamped. Documents delivered outside the portal without prior administrative instruction are not considered official submissions.
-
 3. **Eligibility and submission limits**  
    1. An applicant may act as PI in at most one proposal per Call and may receive support under the ČVUT Starting Grant only once.  
    2. A PI may not, at the time of submission, be a member of the evaluation panel appointed for this Call.  
    3. The PI must be at most eight (8) years after the award of their first Ph.D. (or equivalent) at the Call deadline. Eligible career breaks may be excluded from this limit as specified below.  
    4. Other eligibility conditions set out in the Principles apply (including the international experience requirement and the CTU employment/full-time equivalent requirement).
-
 4. **Career-break rules for the 2026 Call**  
    The eligibility window in Article II.3.3 is extended as follows:
    1. **Maternity/parental leave (maternity):** flat-rate extension of eighteen (18) months per child. Proof of parenthood (e.g., birth certificate or equivalent official document) is sufficient. If a longer total period of maternity leave (or maternity leave combined with parental leave) is documented, the extension may be based on the documented actual duration, whichever is longer.  
@@ -64,7 +57,6 @@ This Call is issued pursuant to the *Principles of the ČVUT Starting Grant Comp
    3. **Other circumstances** (e.g., long-term illness/injury, compulsory military service): extension by the documented actual duration.
 
    Applicants must list relevant dates in the PI profile (CV/Track Record) and provide supporting documentation in the submission portal.
-
 5. **Formal requirements and mandatory proposal content**  
    1. Proposals must be submitted in English and must follow the templates and limits published on the Call webpage and listed in Annex B.  
    2. The proposal package must include:
@@ -74,22 +66,18 @@ This Call is issued pursuant to the *Principles of the ČVUT Starting Grant Comp
       4. **Indicative budget for the full project duration** (up to three years, plus an optional bridging year where applicable under the Principles), using the cost categories and overhead rule set out in Annex A; and  
       5. **Two (2) recommendation letters**, submitted directly by referees (Annex D).
    3. Applicants may contact potential host units in advance and may indicate preferred host unit(s) on a non-binding basis. To minimize administrative burden and ensure equal treatment, proposals must not include negotiated host-unit commitments or proposed co-funding ratios. Host matching and confirmation of institutional commitments take place in post-selection negotiations.
-
 ## Article III: Budget framework and number of supported projects
 
 1. **Scope**  
    1. The Rector allocates an indicative amount of 25,000,000 Kč (≈ €1,820,000) from CTU Future Fund resources for the 2026 Call. This allocation is expected to be complemented by co-funding from host units.  
    2. CTU intends to award up to ten (10) projects under this Call. The panel may shortlist at most twenty (20) proposals for interviews.  
    3. Applicants submit budgets as total eligible project costs. The co-funding split between the CTU Future Fund and the host unit is determined during post-selection host matching and negotiations and confirmed in the grant agreement.
-
 2. **Annual cap, co-funding, and relocation**  
    1. The maximum total project budget (CTU Future Fund and host unit contributions combined) that may be requested per project and per year (the annual cap) is 4,000,000 Kč (≈ €163,200).  
    2. For budgeting purposes, applicants may assume an indicative co-funding split of 50:50 between the CTU Future Fund and the host unit. The actual co-funding split is not part of the proposal and is determined during post-selection negotiations.  
    3. For PIs moving from abroad, the Call may provide a one-time relocation package of up to 250,000 Kč (≈ €10,200), with eligible cost items specified in Annex A. Where provided, the relocation package is funded at 100% from the CTU Future Fund, documented in the grant agreement, and does not count toward the annual cap in Article III.2.1.
-
 3. **Eligible cost categories**  
    Eligible project costs are defined in the Principles. Budgets must follow the category structure and overhead rule set out in Annex A.
-
 4. **Budget information package**  
    To support applicants (including candidates relocating from abroad), the Call provides a budget information package in Annex A and a read-only budget calculator on the Call webpage (listed in Annex B). The package is non-binding and is provided for budgeting transparency; final budget parameters are confirmed in the grant agreement.
 
@@ -102,7 +90,6 @@ This Call is issued pursuant to the *Principles of the ČVUT Starting Grant Comp
    4. Evaluators assess the quality and content of contributions and consider a broad range of outputs (e.g., publications, software, datasets, patents). Productivity is assessed in the context of effective research time, part-time appointments, and documented career breaks.  
    5. Host matching and co-funding negotiations are conducted separately from scientific evaluation and do not affect panel scores or ranking.
    6. Panel members serve without remuneration (no honoraria) under this Call.
-
 2. **Summary of criteria and indicative weights**  
    The panel evaluates proposals against the following criteria:
 
@@ -113,26 +100,21 @@ This Call is issued pursuant to the *Principles of the ČVUT Starting Grant Comp
    | C | Fit with CTU and feasibility of establishing a research group | 20% |
 
    Weights are indicative; Criteria A and B remain dominant. 
-
 3. **Scoring scale (1–9)**  
    Each criterion and the overall assessment are scored on the following scale: 9 (Outstanding), 8 (Excellent), 7 (Very good), 6 (Good), 5 (Adequate), 4–3 (Weak), and 2–1 (Poor).
-
 4. **Detailed evaluation criteria**
-
    1. **Criterion A: Scientific quality and originality of the project**
       1. Novelty, ambition, and significance of the research questions and objectives.  
       2. Potential to advance the state of the art (including interdisciplinary potential where relevant).  
       3. Soundness of the approach (methods, work plan, milestones).  
       4. Feasibility, including key risks and credible mitigation measures.  
       5. Clarity of deliverables and expected scientific contribution.
-
    2. **Criterion B: Excellence, independence, and leadership potential of the PI**
       1. Scientific contributions and achievements appropriate to the career stage.  
       2. Evidence of intellectual independence (new directions, leadership roles; where relevant, authorship roles).  
       3. Ability to lead a team and deliver a complex project (including supervision/mentoring capacity).  
       4. Fit between the PI’s expertise and the proposed objectives and methods.  
       5. Breadth of research environments and collaborations beyond a single institution (and where applicable beyond a single country).
-
    3. **Criterion C: Fit with CTU and feasibility of establishing a research group**  
       Criterion C is assessed based on the applicant’s written plan (Scientific Project Description) and does not require any negotiated host-unit commitments at submission.
       1. Credibility of the PI’s plan to establish an independent research group at CTU.  
@@ -140,7 +122,6 @@ This Call is issued pursuant to the *Principles of the ČVUT Starting Grant Comp
       3. Fit with CTU: clarity of the group’s niche and how it complements existing strengths.  
       4. Integration plan: access to infrastructure/support and collaborations/mentoring that support independence and growth.  
       5. Sustainability beyond the grant (follow-up funding strategy and long-term embedding), with the plan remaining robust under host matching after shortlisting.
-
    4. **Budget** adequacy is not scored as a primary selection criterion. Budget checks and, where appropriate, panel-recommended adjustments are performed primarily after shortlisting and in post-selection negotiations, without compromising scientific quality.
 5. **Required evaluation outputs**  
    For each proposal, evaluators provide:
@@ -153,13 +134,11 @@ This Call is issued pursuant to the *Principles of the ČVUT Starting Grant Comp
 
 1. **Review process**  
    The general review process is defined in the Principles and the Evaluation Procedure Guidelines. Call-specific elements are specified below.
-
 2. **Shortlisting and parallel tracks (after shortlisting)**  
    1. The panel conducts a document-based assessment and adopts a shortlist for the next stage.  
    2. After shortlisting, the following activities run in parallel:
       1. more detailed reviews by panel members and external peer review; and  
       2. host matching (preliminary, separate from candidates), as described in Article V.3.
-
 3. **Host matching (electronic expression of interest; separate from candidates)**  
    1. Host matching is carried out to prepare post-selection negotiations and to confirm feasible institutional conditions for implementing ranked proposals.  
    2. For shortlisted proposals, Call administration circulates a standardized short summary (derived from the application) to eligible host units and collects expressions of interest via a one-page electronic form indicating:
@@ -167,7 +146,6 @@ This Call is issued pursuant to the *Principles of the ČVUT Starting Grant Comp
       2. basic implementation parameters to be confirmed in negotiations (e.g., availability of space/infrastructure and indicative employment timeline).  
    3. The host matching process does not involve the candidate at this stage and does not affect scientific scoring or the panel’s ranking.
    4. Host matching information and templates (including the one-page form and any co-funding options) are issued as **Shortlisting Package S1** and are released only after shortlisting to relevant host units (and, where appropriate, shortlisted applicants). A concise grant agreement term sheet may be issued as **Shortlisting Package S2**.
-
 4. **Interviews (standard format)**  
    Shortlisted applicants are invited to an online interview conducted in English. The interview has a standard format:
    1. Presentation by the PI: up to 5 minutes, focusing on objectives, approach, key risks/mitigation, and the PI’s independence and leadership plan.  
@@ -175,11 +153,9 @@ This Call is issued pursuant to the *Principles of the ČVUT Starting Grant Comp
    3. Closed panel discussion: the panel deliberates without the applicant.  
 
    Invitations are sent at least ten (10) calendar days in advance and include the interview schedule, connection details, and the required structure. If an applicant is unable to attend at the scheduled time due to serious reasons, the Call administration may allow one rescheduling if feasible and if equal treatment is preserved.
-
 5. **Recording and retention**  
    1. Interviews are not recorded by default. Any recording (if agreed in advance) is used only for internal purposes of the Competition (documentation of the interview process, support of consistent evaluation, and handling of any procedural review request).  
    2. Recordings are stored in a CTU-controlled system with restricted access and are retained until 90 days after publication of results, after which they are securely deleted.
-
 6. **Panel outcome and funding decision**  
    1. The panel adopts a final ranking and a funding recommendation, including any recommended budget adjustments.  
    2. Funding is conditional on the successful conclusion of post-selection negotiations and a formal co-funding commitment by the host unit, as documented in the grant agreement.  
@@ -188,23 +164,19 @@ This Call is issued pursuant to the *Principles of the ČVUT Starting Grant Comp
       1. confirmation of co-funding and implementation conditions; and  
       2. the agreed employment and career-path arrangements for the PI.  
       If negotiations cannot be concluded within the timeframe specified in Article I, CTU may withdraw the funding offer and initiate negotiations with the next proposal in the ranking.
-
 7. **Communication and publication of results**  
    1. Applicants are informed of the evaluation result via the CTU Research Information System.  
    2. The results of the Call are published no later than the deadline specified in Article I.
-
 8. **Requests for review (objections / redress)**  
    1. An applicant may submit a request for review if they consider that:
       1. the proposal was incorrectly assessed as ineligible/inadmissible/incomplete; or  
       2. the evaluation procedure was not correctly applied (e.g., procedural irregularity, conflict-of-interest handling, or missing material considered by the panel).
    2. A request for review may not be used to challenge the scientific judgment of reviewers or the panel. The request must be submitted within five (5) calendar days of receipt of the results notification and must be filed via the submission system (or, if unavailable, in the manner communicated by Call administration).
    3. Requests are examined by a review committee appointed by the Rectorate that includes members not involved in the evaluation of the proposal. The committee reviews compliance with procedure and may consult relevant documentation; it does not evaluate the project’s scientific merits. Outcomes of a well-founded request may include confirmation of the original outcome, correction of a formal status and (where feasible) continuation of evaluation, or other proportionate procedural remedies.
-
 9. **Grant agreement and project start**  
    Details of project implementation, including the allocation and use of funds, are set out in a grant agreement concluded between CTU, the host unit(s), and the PI. The agreement must be concluded within the timeframe specified in Article I. Project implementation starts on the start date agreed in the grant agreement, within the start window specified in Article I.
 
 ## Article VI: Closing provisions
-
 1. This Call implements the 2026 Call of the ČVUT Starting Grant Competition established by Rector’s Directive No. [xx]/[20xx] (Principles of the ČVUT Starting Grant Competition).  
 2. This Call becomes effective on 2 February 2026.  
 3. The text of this Call and basic information about the Competition will be published on the official website of CTU and on the web page of the Department of Science and Research of the CTU Rectorate.  
